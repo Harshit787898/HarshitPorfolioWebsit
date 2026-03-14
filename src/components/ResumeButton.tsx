@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"; // Added useEffect
 import { motion, AnimatePresence } from "framer-motion";
-import { FiDownload, FiX, FiCopy } from "react-icons/fi";
+import { FiDownload, FiX} from "react-icons/fi";
 import resumeFile from "../assets/HarshitResume.pdf";
 
 const ResumeButton = () => {

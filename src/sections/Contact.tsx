@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FiMail, FiGithub, FiLinkedin, FiArrowUpRight, FiCopy } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiArrowUpRight, FiCopy } from "react-icons/fi";
 import { useState } from "react";
 
 const Contact = () => {

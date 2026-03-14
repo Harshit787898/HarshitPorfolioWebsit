@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion ,Variants} from "framer-motion";
 import {
   FiCode,
   FiAward,
@@ -11,6 +11,7 @@ import {
 import NewgenLogo from "@/assets/NewGenLogo.png";
 import NewgenDarkLogo from "@/assets/NewgenDarkLogo.jpg";
 import { useEffect, useState } from "react";
+
 
 // ── Stagger container variants ──────────────────────────────────────────────
 const bentoContainer = {

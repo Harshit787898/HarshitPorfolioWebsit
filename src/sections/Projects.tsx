@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FiGithub, FiExternalLink, FiSmartphone, FiLayout } from "react-icons/fi";
+import { FiGithub, FiSmartphone, FiLayout } from "react-icons/fi";
 import { projects } from "@/data/projects";
 
 const Projects = () => {

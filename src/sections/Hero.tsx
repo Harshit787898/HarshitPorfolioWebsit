@@ -2,7 +2,7 @@ import PhoneMockup from "@/components/PhoneMockup";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import { FiArrowRight, FiCheckCircle } from "react-icons/fi"; // Added Icons
+import { FiArrowRight} from "react-icons/fi"; // Added Icons
 import ResumeButton from "@/components/ResumeButton";
 
 const Hero = () => {

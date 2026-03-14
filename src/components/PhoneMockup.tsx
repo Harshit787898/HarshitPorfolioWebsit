@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import { FaGithub, FaLinkedin, FaEnvelope, FaReact } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaReact } from "react-icons/fa";
 import { SiTypescript, SiNodedotjs, SiTailwindcss } from "react-icons/si";
 import { FiLayout, FiLayers, FiSend, FiUser, FiCode } from "react-icons/fi";
 

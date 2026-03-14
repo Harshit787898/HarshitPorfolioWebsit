@@ -1,4 +1,4 @@
-import { motion ,Variants} from "framer-motion";
+import { motion} from "framer-motion";
 import {
   FiCode,
   FiAward,
@@ -30,7 +30,7 @@ const bentoItem = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { type: "spring", stiffness: 260, damping: 22 },
+    transition: { type: "spring" as const, stiffness: 260, damping: 22 },
   },
 };
 
@@ -63,7 +63,7 @@ const pillItem = {
     opacity: 1,
     scale: 1,
     y: 0,
-    transition: { type: "spring", stiffness: 300, damping: 20 },
+    transition: { type: "spring" as const, stiffness: 300, damping: 20 },
   },
 };
 
@@ -246,7 +246,7 @@ const About = () => {
                               initial={{ opacity: 0, y: 8 }}
                               whileInView={{ opacity: 1, y: 0 }}
                               viewport={{ once: true }}
-                              transition={{ delay: 0.5 + i * 0.1, type: "spring", stiffness: 200 }}
+                              transition={{ delay: 0.5 + i * 0.1, type: "spring" as const, stiffness: 200 }}
                               className="text-xl font-bold text-slate-900 dark:text-white"
                             >
                               {label}
@@ -262,7 +262,7 @@ const About = () => {
 
                   <motion.div
                     whileHover={{ scale: 1.2, rotate: -12 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                    transition={{ type: "spring" as const, stiffness: 300, damping: 15 }}
                     className="absolute bottom-6 right-6"
                   >
                     <FiExternalLink
@@ -280,7 +280,7 @@ const About = () => {
                 initial={{ scale: 0, rotate: -15 }}
                 whileInView={{ scale: 1, rotate: 0 }}
                 viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 260, damping: 16, delay: 0.1 }}
+                transition={{ type: "spring" as const, stiffness: 260, damping: 16, delay: 0.1 }}
               >
                 <FiTerminal size={24} className="text-blue-500 mb-4" />
               </motion.div>
@@ -296,7 +296,7 @@ const About = () => {
                 initial={{ scale: 0, rotate: 15 }}
                 whileInView={{ scale: 1, rotate: 0 }}
                 viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 260, damping: 16, delay: 0.15 }}
+                transition={{ type: "spring" as const, stiffness: 260, damping: 16, delay: 0.15 }}
               >
                 <FiBookOpen size={24} className="text-purple-500 mb-4" />
               </motion.div>
@@ -341,7 +341,7 @@ const About = () => {
                     initial={{ opacity: 0, scale: 0.5 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 200, damping: 14, delay: 0.3 }}
+                    transition={{ type: "spring" as const, stiffness: 200, damping: 14, delay: 0.3 }}
                     className="text-2xl font-black text-blue-600"
                   >
                     GATE
@@ -359,7 +359,7 @@ const About = () => {
                 initial={{ scale: 0, rotate: -20 }}
                 whileInView={{ scale: 1, rotate: 0 }}
                 viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 240, damping: 14, delay: 0.1 }}
+                transition={{ type: "spring" as const, stiffness: 240, damping: 14, delay: 0.1 }}
               >
                 <FiCode size={24} className="text-emerald-500 mb-4" />
               </motion.div>
@@ -392,7 +392,7 @@ const BentoTile = ({
     whileHover={{
       y: -6,
       scale: 1.015,
-      transition: { type: "spring", stiffness: 320, damping: 20 },
+      transition: { type: "spring" as const, stiffness: 320, damping: 20 },
     }}
     className={`p-6 rounded-[2rem] border shadow-sm flex flex-col justify-center relative ${className}`}
   >

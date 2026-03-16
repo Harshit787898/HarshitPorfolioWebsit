@@ -14,3 +14,17 @@ export default {
   },
   plugins: []
 }
+module.exports = {
+  theme: {
+    extend: {
+      animation: {
+        'shine': 'shine 0.8s ease-in-out',
+      },
+      keyframes: {
+        shine: {
+          '100%': { left: '125%' },
+        },
+      },
+    },
+  },
+};

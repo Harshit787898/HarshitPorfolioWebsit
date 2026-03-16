@@ -6,6 +6,7 @@ import Skills from "@/sections/Skills"
 import Experience from "@/sections/Experience"
 import Projects from "@/sections/Projects"
 import Contact from "@/sections/Contact"
+import Badges from "@/sections/Badges"
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Hero />
 
         <About />
+
+        <Badges/>
 
         <Skills />
 

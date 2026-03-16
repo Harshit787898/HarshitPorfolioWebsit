@@ -4,6 +4,7 @@ import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
 
 const navLinks = [
   { label: "About", link: "#about" },
+  { label: "Badges", link: "#badges"},
   { label: "Skills", link: "#skills" },
   { label: "Projects", link: "#projects" },
   { label: "Experience", link: "#experience" },

@@ -132,13 +132,18 @@ const Contact = () => {
               sub="Professional"
               index={1}
             />
-            <motion.div
+            <motion.a
+              href="https://www.google.com/maps?q=Noida,India"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative flex flex-row sm:flex-col items-center justify-center gap-4 sm:gap-2 p-6 rounded-3xl overflow-hidden group border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/30 shadow-sm sm:col-span-2 md:col-span-1"
+              whileHover={{ y: -5 }}
+              className="relative flex flex-row sm:flex-col items-center justify-center gap-4 sm:gap-2 p-6 rounded-3xl overflow-hidden group border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/30 shadow-sm sm:col-span-2 md:col-span-1 cursor-pointer"
             >
+            
               {/* 1. Subtle Animated Background Glow (only on hover) */}
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-blue-50/50 dark:from-indigo-500/5 dark:to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -163,7 +168,7 @@ const Contact = () => {
 
               {/* 3. Bottom Border Accent */}
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-indigo-200 dark:via-blue-500/40 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-            </motion.div>
+            </motion.a>
           </div>
 
           <p className="mt-20 text-xs md:text-sm text-slate-400 dark:text-slate-600">
